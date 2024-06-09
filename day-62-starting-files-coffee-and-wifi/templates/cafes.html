@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
+{% from 'bootstrap5/table.html' import render_table %}
 {% block title %}Restaurants{% endblock %}
+
 
 {% block content %}
 
@@ -9,15 +11,12 @@
 
       <h1>All Cafes</h1>
 
-	  <table class="table table-dark table-striped table-hover">
+
           <!-- This is where you will write the code to render a Bootstrap 
           Table that contains all the information from the 
           cafe-data.csv file. -->
-  	  </table>
 
-      <p><a href="#">Return to index page</a></p>
-
-    </div>
+      <p>{{cafes}}</p>
   </div>
 </div>
 
